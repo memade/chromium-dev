@@ -127,35 +127,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\developer\github\chromium\src\base\system\sys_info.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\base\win\windows_version.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\chrome\app\chrome_exe_main_win.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\chrome\browser\chrome_content_browser_client.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\chrome\chrome_elf\chrome_elf_main.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\content\renderer\renderer_blink_platform_impl.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\services\network\public\cpp\simple_url_loader.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\services\network\url_loader.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\core\frame\navigator.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\core\frame\navigator_concurrent_hardware.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\core\frame\navigator_device_memory.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\core\frame\navigator_id.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\core\frame\screen.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\modules\canvas\canvas2d\base_rendering_context_2d.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\modules\donottrack\navigator_do_not_track.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\modules\webaudio\audio_buffer.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\modules\webaudio\audio_context.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\modules\webaudio\offline_audio_context.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\modules\webgl\webgl_rendering_context.cc" />
-    <ClCompile Include="C:\developer\github\chromium\src\third_party\blink\renderer\modules\webgl\webgl_rendering_context_base.cc" />
-    <ClCompile Include="github\chromium\src\components\version_info\version_info.cc" />
+    <ClCompile Include="..\..\chromium\src\base\system\sys_info.cc" />
+    <ClCompile Include="..\..\chromium\src\base\win\windows_version.cc" />
+    <ClCompile Include="..\..\chromium\src\chrome\app\chrome_exe_main_win.cc" />
+    <ClCompile Include="..\..\chromium\src\chrome\browser\chrome_content_browser_client.cc" />
+    <ClCompile Include="..\..\chromium\src\chrome\chrome_elf\chrome_elf_main.cc" />
+    <ClCompile Include="..\..\chromium\src\content\renderer\renderer_blink_platform_impl.cc" />
+    <ClCompile Include="..\..\chromium\src\services\network\public\cpp\simple_url_loader.cc" />
+    <ClCompile Include="..\..\chromium\src\services\network\url_loader.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\core\frame\navigator.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\core\frame\navigator_concurrent_hardware.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\core\frame\navigator_device_memory.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\core\frame\navigator_id.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\core\frame\screen.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\modules\canvas\canvas2d\base_rendering_context_2d.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\modules\donottrack\navigator_do_not_track.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\modules\webaudio\audio_buffer.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\modules\webaudio\audio_context.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\modules\webaudio\offline_audio_context.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\modules\webgl\webgl_rendering_context.cc" />
+    <ClCompile Include="..\..\chromium\src\third_party\blink\renderer\modules\webgl\webgl_rendering_context_base.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\developer\github\chromium\src\chrome\chrome_elf\chrome_elf_main.h" />
+    <ClInclude Include="..\..\chromium\src\chrome\chrome_elf\chrome_elf_main.h" />
     <ClInclude Include="github\chromium\include\chromium.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\developer\github\chromium\src\chrome\chrome_elf\chrome_elf_x64.def" />
-    <None Include="C:\developer\github\chromium\src\chrome\chrome_elf\chrome_elf_x86.def" />
+    <None Include="..\..\chromium\src\chrome\chrome_elf\chrome_elf_x64.def" />
+    <None Include="..\..\chromium\src\chrome\chrome_elf\chrome_elf_x86.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
