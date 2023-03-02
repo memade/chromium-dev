@@ -5,6 +5,22 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "view", "compile\view.vcxproj", "{9E49C19F-6092-40AE-8F7A-CE3C19802B23}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "compile\test.vcxproj", "{22450052-31A1-4BCD-8469-A1D0391DAF14}"
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "chrome", "..\chromium\src\out\debug\chrome.exe", "{49A5B81A-D897-40C7-A762-3DDD8C11A0D8}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\google\chromium\src\out\debug\chrome.exe
+		RemoteMachine = MEMADE
+		StartingDirectory = C:\google\chromium\src\out\debug
+		Environment = 默认值
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +37,18 @@ Global
 		{9E49C19F-6092-40AE-8F7A-CE3C19802B23}.Release|x64.Build.0 = Release|x64
 		{9E49C19F-6092-40AE-8F7A-CE3C19802B23}.Release|x86.ActiveCfg = Release|Win32
 		{9E49C19F-6092-40AE-8F7A-CE3C19802B23}.Release|x86.Build.0 = Release|Win32
+		{22450052-31A1-4BCD-8469-A1D0391DAF14}.Debug|x64.ActiveCfg = Debug|x64
+		{22450052-31A1-4BCD-8469-A1D0391DAF14}.Debug|x64.Build.0 = Debug|x64
+		{22450052-31A1-4BCD-8469-A1D0391DAF14}.Debug|x86.ActiveCfg = Debug|Win32
+		{22450052-31A1-4BCD-8469-A1D0391DAF14}.Debug|x86.Build.0 = Debug|Win32
+		{22450052-31A1-4BCD-8469-A1D0391DAF14}.Release|x64.ActiveCfg = Release|x64
+		{22450052-31A1-4BCD-8469-A1D0391DAF14}.Release|x64.Build.0 = Release|x64
+		{22450052-31A1-4BCD-8469-A1D0391DAF14}.Release|x86.ActiveCfg = Release|Win32
+		{22450052-31A1-4BCD-8469-A1D0391DAF14}.Release|x86.Build.0 = Release|Win32
+		{49A5B81A-D897-40C7-A762-3DDD8C11A0D8}.Debug|x64.ActiveCfg = Release|x64
+		{49A5B81A-D897-40C7-A762-3DDD8C11A0D8}.Debug|x86.ActiveCfg = Release|x64
+		{49A5B81A-D897-40C7-A762-3DDD8C11A0D8}.Release|x64.ActiveCfg = Release|x64
+		{49A5B81A-D897-40C7-A762-3DDD8C11A0D8}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,13 +1,14 @@
 ﻿#if !defined(__18AFB12A_B5DC_448E_8F1B_1D2227515AE4__)
 #define __18AFB12A_B5DC_448E_8F1B_1D2227515AE4__
 
-#include "rapidjson/include/rapidjson/reader.h"
-#include "rapidjson/include/rapidjson/document.h"
-#include "rapidjson/include/rapidjson/rapidjson.h"
-#include "rapidjson/include/rapidjson/stringbuffer.h"
-#include "rapidjson/include/rapidjson/writer.h"
-#include "rapidjson/include/rapidjson/stream.h"
+#include "../3rdparty/rapidjson/include/rapidjson/reader.h"
+#include "../3rdparty/rapidjson/include/rapidjson/document.h"
+#include "../3rdparty/rapidjson/include/rapidjson/rapidjson.h"
+#include "../3rdparty/rapidjson/include/rapidjson/stringbuffer.h"
+#include "../3rdparty/rapidjson/include/rapidjson/writer.h"
+#include "../3rdparty/rapidjson/include/rapidjson/stream.h"
 
+#if 0
 namespace shared {
 
 #define JSON_VALUE_TO_STRING(in,out) \
@@ -399,6 +400,7 @@ else if(*it==']')\
 
 }///namesapce shared
 
+#endif
 /// /*_ Memade®（新生™） _**/
 /// /*_ Wed, 01 Mar 2023 22:15:15 GMT _**/
 /// /*_____ https://www.skstu.com/ _____ **/
