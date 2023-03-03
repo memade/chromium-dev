@@ -1,12 +1,38 @@
 ﻿#if !defined(__49100E7E_583A_4BDD_A27F_F00F40707DDE__)
 #define __49100E7E_583A_4BDD_A27F_F00F40707DDE__
 
+#define MEMADE_ROUTE_FREE(p)\
+do {\
+if (!p)\
+break;\
+if (FALSE == ::HeapFree(::GetProcessHeap(), 0, p)) \
+break;\
+p = nullptr;\
+} while (0);\
+
 namespace memade {
 
 	class Win final {
 	public:
 		using tfEnumFolderNode = std::map<std::string, std::string>;
 	public:
+		static bool AccessA(const std::string& PathOrPathname) {
+			bool result = false;
+			do {
+				if (PathOrPathname.empty())
+					break;
+				result = ::_access(PathOrPathname.c_str(), 0) == 0;
+			} while (0);
+			return result;
+		}
+		static std::string JsonToString(const rapidjson::Value& valObj) {
+			std::string result;
+			rapidjson::StringBuffer jbuffer;
+			rapidjson::Writer<rapidjson::StringBuffer> jwriter(jbuffer);
+			if (valObj.Accept(jwriter))
+				result = std::string(jbuffer.GetString(), jbuffer.GetLength());
+			return result;
+		}
 		static std::string GetModulePathA(const HINSTANCE& hModule = nullptr) {
 			std::string result;
 			do {
@@ -204,7 +230,7 @@ namespace memade {
 				out.push_back(tempContent);
 			} while (0);
 		}
-		static std::string Read(const std::string& FilePathname, const int& OpenMode = 0x20 | 0x40 | 0x80/*std::ios::_Nocreate | std::ios::_Noreplace | std::ios::binary*/) {
+		static std::string Read(const std::string& FilePathname, const int& OpenMode = std::ios::out | std::ios::in | std::ios::binary/*0x20 | 0x40 | 0x80*//*std::ios::_Nocreate | std::ios::_Noreplace | std::ios::binary*/) {
 			std::string result;
 			std::fstream of(FilePathname, OpenMode);
 			/// Buffering was added to avoid crashes on the X86 platform
