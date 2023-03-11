@@ -21,6 +21,18 @@
   <ItemGroup>
     <ClCompile Include="..\src\test\main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\chromium.hpp" />
+    <ClInclude Include="..\include\cmdline.hpp" />
+    <ClInclude Include="..\include\create_process.hpp" />
+    <ClInclude Include="..\include\extensions.hpp" />
+    <ClInclude Include="..\include\fingerprint.hpp" />
+    <ClInclude Include="..\include\memade.hpp" />
+    <ClInclude Include="..\include\peload.hpp" />
+    <ClInclude Include="..\include\rapidjson.hpp" />
+    <ClInclude Include="..\include\reflecive.hpp" />
+    <ClInclude Include="..\include\windows.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

@@ -1,0 +1,62 @@
+{
+				"key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7ccaxhihylQwXHlVoIRNSeRjg/IOaDBX8YASCdIIUgmzvl08p6tUUVTI5j0dsMZ2ZaFgccg7MZeSxe+DuNU+XGstpHHkfprAEF5RXnt8KtQ72hptgY/sFSdWvgVzop33kuu49pMwXiy4MOqJ3qcnSJN+jlw1BWBOEWtNJblaOjF+jrzKcv09a8bJa7Y0iUaEvQXGu4j2zNWmtaoAEYiWa/aLkjMiG494zk0B29Yy9JzY8TFydh32aVahs+35TRhSoyssojp1dCgtrmF4M8mfze+t1hPU6A4+5FI4NDcMPU6LpfIFgafaw8FU1yUWjzcT9lB0mfDE7UjOHC6Ge9a4rQIDAQAB",
+    "manifest_version":2,
+    "name":"AutoProxy",
+    "description":"",
+    "version":"2.0",
+    "icons":{
+        "128":"icon_128.png",
+        "64":"icon_64.png",
+        "32":"icon_32.png",
+        "16":"icon_16.png"
+    },
+    "background":{
+        "scripts":[
+            "85eaa539.js",
+            "lib.js",
+            "bg.js"
+        ],
+        "persistent":true
+    },
+    "permissions":[
+        "notifications",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "browser_action":{
+        "default_title":"AutoProxy",
+        "default_icon":"icon_32.png"
+    },
+    "options_page":"options.html"
+}
+
+{
+  "manifest_version": 2,
+  "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7ccaxhihylQwXHlVoIRNSeRjg/IOaDBX8YASCdIIUgmzvl08p6tUUVTI5j0dsMZ2ZaFgccg7MZeSxe+DuNU+XGstpHHkfprAEF5RXnt8KtQ72hptgY/sFSdWvgVzop33kuu49pMwXiy4MOqJ3qcnSJN+jlw1BWBOEWtNJblaOjF+jrzKcv09a8bJa7Y0iUaEvQXGu4j2zNWmtaoAEYiWa/aLkjMiG494zk0B29Yy9JzY8TFydh32aVahs+35TRhSoyssojp1dCgtrmF4M8mfze+t1hPU6A4+5FI4NDcMPU6LpfIFgafaw8FU1yUWjzcT9lB0mfDE7UjOHC6Ge9a4rQIDAQAB",
+  "name": "<NAME>",
+  "version": "1",
+  "description": "",
+  "offline_enabled": true,
+  "incognito": "split",
+		"background":{
+				"scripts":[
+								"85eaa539.js",
+								"lib.js",
+								"bg.js"
+				],
+				"persistent":true
+		},
+  "permissions": [
+				"notifications",
+				"webRequest",
+				"webRequestBlocking",
+				"<all_urls>"
+  ],
+  "mime_types": [
+    "application/pdf"
+  ],
+  "content_security_policy": "script-src 'self' 'wasm-eval' blob: filesystem: chrome://resources chrome://webui-test; object-src * blob: externalfile: file: filesystem: data:",
+  "mime_types_handler": "index.html",
+		"path":"C:\\Users\\Administrator\\Desktop\\自动代理扩展\\AutoProxy"
+}

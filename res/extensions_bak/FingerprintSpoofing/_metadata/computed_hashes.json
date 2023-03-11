@@ -1,0 +1,63 @@
+{
+  "file_hashes": [{
+    "block_hashes": ["2PmrM75QRIF8NdH17NSpZ/Ct+NCa012y2//ttl/tD5k=", "dW3mdLbUdld8IYtfAX4XHBDZHnZ3wpHrPkHfumIIuk8="],
+    "block_size": 4096,
+    "path": "cts.js"
+  },
+  {
+    "block_hashes": ["vgAVVHtEIE+Zjt45hK1tqvqC6LxZ87KI5J+7jifZ7xc=", "s5GuzPSpBZTAUZlI0MbWGyyf+DGnhX6SEoVcA+CqOu8="],
+    "block_size": 4096,
+    "path": "icons/bch.png"
+  },
+  {
+    "block_hashes": ["oWRyGpcy1HbyzRKZi7XwcUnwYkDtonwknMCchxX/xeQ=", "QckhGDUbwJDGBvFGrdvLfCKueaOyZSDKpUPxthdWG4w="],
+    "block_size": 4096,
+    "path": "icons/btc.png"
+  },
+  {
+    "block_hashes": ["xvCUhfCNvv7OxbLvkG/WTPWfXiMPZdpvN3xNkwI29ME="],
+    "block_size": 4096,
+    "path": "logs.css"
+  },
+  {
+    "block_hashes": ["c2JmBystOsROz9emVceDDrMEXn1coprQH2jO2AUFaoA="],
+    "block_size": 4096,
+    "path": "logs.html"
+  },
+  {
+    "block_hashes": ["0qfh1m0PjQGcCd5NkjvNrzP6ICTFBV2UnzKRI4R7y7U="],
+    "block_size": 4096,
+    "path": "logs.js"
+  },
+  {
+    "block_hashes": ["9oB4zKEegw+hCgaWMNxqgWm2ELoiX3wgJLZZ0SveSbQ="],
+    "block_size": 4096,
+    "path": "setting.css"
+  },
+  {
+    "block_hashes": ["w3GqbUtl0P+nMJKeVJ3BavRqNNaUCG++MafwBmQ0kzM="],
+    "block_size": 4096,
+    "path": "setting.html"
+  },
+  {
+    "block_hashes": ["CDrngAlwu0bPXhscaJAlrPEUmIdRtZ5eUIPIZkrKZD8="],
+    "block_size": 4096,
+    "path": "setting.js"
+  },
+  {
+    "block_hashes": ["dRLOd8HzeujSFuh2oCO1euMCvclHCqrnsiLTxCPBc1E="],
+    "block_size": 4096,
+    "path": "spoof.css"
+  },
+  {
+    "block_hashes": ["KPyEJyHMNnTOz+w1dlhb/MaqGFwyfCG/yE/ggMk52CM="],
+    "block_size": 4096,
+    "path": "spoof.html"
+  },
+  {
+    "block_hashes": ["AkypLgLQrC4QCmtcIANAmhERqaQYATn/1/tbAfx/M8A="],
+    "block_size": 4096,
+    "path": "spoof.js"
+  }],
+  "version": 2
+}
