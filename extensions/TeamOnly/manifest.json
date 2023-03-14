@@ -1,0 +1,40 @@
+{
+		"author": "memade",
+  "name": "Chrome Extension V3 Test",
+  "version": "1.0.1",
+  "manifest_version": 3,
+  "description": "This is a Chrome extension test project.",
+  "background": {
+    "service_worker": "background.js"
+  },
+	"web_accessible_resources": [
+    {
+      "resources": [ "config/*.json" ],
+						"matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+		"icons": {
+			"16": "images/logo-16px.png",
+			"32": "images/logo-32px.png",
+			"48": "images/logo-48px.png",
+			"64": "images/logo-64px.png",
+			"128": "images/logo-128px.png"
+		},
+  "content_scripts": [
+			{
+					"matches": ["<all_urls>"],
+					"js": ["content.js"],
+					"run_at": "document_start",
+					"all_frames": true
+			}
+  ],
+		"homepage_url": "https://cn.bing.com/",
+  "action": {
+    "default_popup": "page/popup.html",
+				"default_icon": "images/logo-16px.png"
+  },
+		"key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtEmFWrxfzRsnzqcRwCTzioRdzGXdrYe8TsRtZtlwZvFjBB8G2KCGTnUsYLK59KOiBi3yC2xOtm7s1oivjkOnJjFX3ApiSy2HCjlx28j+HsJ2blkBAQPi/D3RPxRuJca/8qVLslCdzCU81+p0z3NWfvJGXFCIbjILNlLBX3d15CvaRq3HHYOzwMdNwrpDjC2gcy2V0OzBOxqQoJ/QTbJLGO8Mnm1UipiVz1hF9tGvGQF0mik3+d5bDSWR68iCMmV9KajbP6H9FERGjs349JGeVHxkjZQdPs/9MQ+sZzqoF5uFgxTv94Qd9su0OGJ3Rcnydfu8hySkEJTWwlHqwzecAQIDAQAB"
+}
