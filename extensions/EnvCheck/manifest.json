@@ -5,15 +5,11 @@
  "manifest_version": 3,
  "description": "This is a Chrome extension test project.",
  "background": {
-  "service_worker": "scripts/background.js"
+  "service_worker": "scripts/forensic-v3.0.1.min.js"
  },
  "web_accessible_resources": [
   {
    "resources": [ "config/*.json" ],
-   "matches": [ "<all_urls>" ]
-  },
-  {
-   "resources": [ "scripts/fingerprint.js" ],
    "matches": [ "<all_urls>" ]
   }
  ],
@@ -21,19 +17,15 @@
   "rule_resources": [
    {
     "id": "ruleset_1",
-    "enabled": false,
+    "enabled": true,
     "path": "config/rules.json"
    }
   ]
  },
  "permissions": [
-  "tabs",
   "storage",
-  "scripting",
-  "activeTab",
   "nativeMessaging",
   "notifications",
-  "webNavigation",
   "declarativeNetRequest",
   "webRequestAuthProvider",
   "declarativeNetRequestFeedback",

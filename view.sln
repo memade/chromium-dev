@@ -37,6 +37,42 @@ Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "browser_tests", "..\chromiu
 		IORedirection = Auto
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "extensions", "extensions", "{B106394F-9968-4529-9187-0D415D520E91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TeamOnly", "TeamOnly", "{D44A0C51-2580-4AA5-8862-7D722C446915}"
+	ProjectSection(SolutionItems) = preProject
+		extensions\TeamOnly\manifest.json = extensions\TeamOnly\manifest.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{4377ED8F-3698-464E-8260-BB1E655FDDA0}"
+	ProjectSection(SolutionItems) = preProject
+		extensions\TeamOnly\config\config.json = extensions\TeamOnly\config\config.json
+		extensions\TeamOnly\config\rules.json = extensions\TeamOnly\config\rules.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{609305E4-2F95-439C-AF56-CD72D2D62F31}"
+	ProjectSection(SolutionItems) = preProject
+		extensions\TeamOnly\images\logo-128px.png = extensions\TeamOnly\images\logo-128px.png
+		extensions\TeamOnly\images\logo-16px.png = extensions\TeamOnly\images\logo-16px.png
+		extensions\TeamOnly\images\logo-32px.png = extensions\TeamOnly\images\logo-32px.png
+		extensions\TeamOnly\images\logo-48px.png = extensions\TeamOnly\images\logo-48px.png
+		extensions\TeamOnly\images\logo-64px.png = extensions\TeamOnly\images\logo-64px.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "page", "page", "{6B3273E7-D9B8-4FF4-AA94-BDF85B11EEB6}"
+	ProjectSection(SolutionItems) = preProject
+		extensions\TeamOnly\page\popup.html = extensions\TeamOnly\page\popup.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{8CE08CF8-2A3E-4C42-A774-34D0D69E68EA}"
+	ProjectSection(SolutionItems) = preProject
+		extensions\TeamOnly\scripts\background.js = extensions\TeamOnly\scripts\background.js
+		extensions\TeamOnly\scripts\content.js = extensions\TeamOnly\scripts\content.js
+		extensions\TeamOnly\scripts\fingerprint.js = extensions\TeamOnly\scripts\fingerprint.js
+		extensions\TeamOnly\scripts\inject.js = extensions\TeamOnly\scripts\inject.js
+		extensions\TeamOnly\scripts\popup.js = extensions\TeamOnly\scripts\popup.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -72,6 +108,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D44A0C51-2580-4AA5-8862-7D722C446915} = {B106394F-9968-4529-9187-0D415D520E91}
+		{4377ED8F-3698-464E-8260-BB1E655FDDA0} = {D44A0C51-2580-4AA5-8862-7D722C446915}
+		{609305E4-2F95-439C-AF56-CD72D2D62F31} = {D44A0C51-2580-4AA5-8862-7D722C446915}
+		{6B3273E7-D9B8-4FF4-AA94-BDF85B11EEB6} = {D44A0C51-2580-4AA5-8862-7D722C446915}
+		{8CE08CF8-2A3E-4C42-A774-34D0D69E68EA} = {D44A0C51-2580-4AA5-8862-7D722C446915}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CF13DE0-DF06-4EE0-A33F-BB909337CA2B}

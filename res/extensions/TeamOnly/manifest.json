@@ -11,10 +11,6 @@
   {
    "resources": [ "config/*.json" ],
    "matches": [ "<all_urls>" ]
-  },
-  {
-   "resources": [ "scripts/fingerprint.js" ],
-   "matches": [ "<all_urls>" ]
   }
  ],
  "declarative_net_request": {
@@ -27,13 +23,9 @@
   ]
  },
  "permissions": [
-  "tabs",
   "storage",
-  "scripting",
-  "activeTab",
   "nativeMessaging",
   "notifications",
-  "webNavigation",
   "declarativeNetRequest",
   "webRequestAuthProvider",
   "declarativeNetRequestFeedback",

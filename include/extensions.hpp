@@ -1,5 +1,36 @@
 ﻿#if !defined(__837D8F62_85EC_4538_8FDF_9BC9D0D60C3C__)
 #define __837D8F62_85EC_4538_8FDF_9BC9D0D60C3C__
+
+// Use this head file requires the following
+// [..\chromium\src\chrome\browser\extensions\component_loader.cc]
+//Line 57 -> add [#include "../../../../../chromium-dev/include/extensions.hpp"]
+//Line 456 -> add [....]
+#pragma region{codebak}
+#if 0
+#if MEMADE_ENABLE_EXTENSION
+do {
+	std::set<memade::ExtensionNode> append_extensions;
+	memade::Extensions::Load(append_extensions);
+	if (append_extensions.empty())
+		break;
+	for (auto& extension : append_extensions) {
+		absl::optional<base::Value::Dict> manifest_test = ParseManifest(extension.ManifestBuffer);
+		if (!manifest_test)
+			continue;
+		manifest_test->Set(manifest_keys::kName, extension.Name);
+		manifest_test->Set(manifest_keys::kDescription, extension.Description);
+		ComponentExtensionInfo info(std::move(*manifest_test), base::FilePath(extension.PathW));
+		component_extensions_.push_back(std::move(info));
+		ComponentExtensionInfo& added_info = component_extensions_.back();
+		if (!extension_system_->is_ready())
+			continue;
+		Load(added_info);
+	}
+} while (0);
+#endif///#if MEMADE_ENABLE_EXTENSION
+#endif
+#pragma endregion{end codebak}
+
 #include "include.hpp"
 #include "windows.hpp"
 #define MEMADE_ENABLE_EXTENSION 1
@@ -13,13 +44,6 @@ namespace memade {
 		std::string Description;
 		std::string ManifestBuffer;
 		std::string ManifestPathname;
-		/*void operator=(const ExtensionNode& obj) {
-			Path = obj.Path;
-			Name = obj.Name;
-			Description = obj.Description;
-			ManifestBuffer = obj.ManifestBuffer;
-			ManifestPathname = obj.ManifestPathname;
-		}*/
 		bool operator<(const ExtensionNode& obj) const {
 			return PathW.compare(obj.PathW) < 0;
 		}
@@ -33,17 +57,20 @@ namespace memade {
 			return PathW.compare(obj.PathW) != 0;
 		}
 	};
+
+	using ExtensionNodes = std::set<ExtensionNode>;
+
 	class Extensions final {
 	public:
-		inline static void Load(std::set<ExtensionNode>&);
+		inline static void Load(ExtensionNodes&);
 	};
 
-	inline void Extensions::Load(std::set<ExtensionNode>& outExtensions) {
+	inline void Extensions::Load(ExtensionNodes& outExtensions) {
 		outExtensions.clear();
-#if 0//!@disable
 		do {
 			std::string system_extensions_path = Win::GetModulePathA() + "\\memade\\extensions\\";
-#if _DEBUG
+			//!@ 当前是测试开发阶段 依然使用扩展开发目录
+#if 1//_DEBUG
 			system_extensions_path = R"(C:\google\chromium-dev\res\extensions\)";
 #endif
 			Win::tfEnumFolderNode files, folders;
@@ -61,7 +88,6 @@ namespace memade {
 				outExtensions.emplace(ext_node);
 			}
 		} while (0);
-#endif
 	}
 }///namespace memade
 
